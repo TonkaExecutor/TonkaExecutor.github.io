@@ -1,9 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Site</title>
+    <title>TonkaExecutor</title>
+    <style>
+        body {
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        .discord-btn {
+            background: #5865F2;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .card {
+            background: #1a1a1a;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #00c853;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            background: #00a844;
+        }
+    </style>
 </head>
 <body>
-  <h1>It works!</h1>
+
+    <div class="container">
+
+        <h1>My Product</h1>
+
+        <!-- Discord Button -->
+        <a class="discord-btn" href="https://discord.gg/vKhWvHtNJD" target="_blank">
+            Join Our Discord
+        </a>
+
+        <!-- Product Card -->
+        <div class="card">
+            <img src="Untitled.jpg" alt="Product Image">
+            <h2>Product Name</h2>
+            <a class="download-btn" href="YourProgram.exe" download>
+                Download
+            </a>
+        </div>
+
+    </div>
+
 </body>
 </html>
