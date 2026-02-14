@@ -3,6 +3,36 @@
 <head>
     <title>TonkaExecutor</title>
     <style>
+
+        .card {
+    background: #1a1a1a;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.card.active .description {
+    max-height: 200px;
+}
+
         body {
             background: #0f0f0f;
             color: white;
@@ -53,6 +83,13 @@
         }
     </style>
 </head>
+
+    <script>
+function toggleCard(card) {
+    card.classList.toggle("active");
+}
+</script>
+
 <body>
 
     <div class="container">
@@ -65,15 +102,24 @@
         </a>
 
         <!-- Product Card -->
-        <div class="card">
-            <img src="Untitled.jpg" alt="Product Image">
-            <h2>TonkaExecutor</h2>
-            <a class="download-btn" href="TonkaExecutorSetup.exe" download>
-                Download
-            </a>
-        </div>
+        <!-- Product Card -->
+<div class="card" onclick="toggleCard(this)">
+    <img src="Untitled.jpg" alt="Product Image">
+    <h2>TonkaExecutor</h2>
 
+    <div class="description">
+        <p>
+            This is a description of the product.
+            You can list features, version info, system requirements,
+            and update notes here.
+        </p>
+
+        <a class="download-btn" href="TonkaExecutorSetup.exe" download>
+            Download
+        </a>
     </div>
+</div>
+
 
 </body>
 </html>
